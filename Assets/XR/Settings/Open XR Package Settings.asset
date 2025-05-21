@@ -1252,11 +1252,11 @@ MonoBehaviour:
   - {fileID: -152412745235195146}
   - {fileID: -1025905340561916859}
   - {fileID: 1409575555154228534}
-  - {fileID: -9158263212284301082}
-  - {fileID: -7949856907330547398}
-  - {fileID: 6612400554289680647}
+  - {fileID: -7453394329167953402}
+  - {fileID: -2203309040565481515}
+  - {fileID: -8776083830351833173}
   - {fileID: -8470163300371861798}
-  - {fileID: -1826762631642183856}
+  - {fileID: 624869861315048294}
   - {fileID: 4733582888881772063}
   - {fileID: 8338187220580160438}
   - {fileID: 8103864927265409526}
@@ -1630,11 +1630,11 @@ MonoBehaviour:
   m_Name: DisplayUtilitiesFeature Android
   m_EditorClassIdentifier: Unity.XR.MetaOpenXR:UnityEngine.XR.OpenXR.Features.Meta:DisplayUtilitiesFeature
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: 'Meta Quest: Display Utilities'
+  version: 0.1.0
+  featureIdInternal: com.unity.openxr.feature.meta-display-utilities
+  openxrExtensionStrings: XR_FB_display_refresh_rate
+  company: Unity Technologies
   priority: 0
   required: 0
 --- !u!114 &2163979698669853125

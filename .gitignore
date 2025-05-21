@@ -4,3 +4,6 @@
 [Bb]uilds/
 [Ll]ogs/
 [Oo]bj/
+UserSettings/
+.vscode/
+.csproj
