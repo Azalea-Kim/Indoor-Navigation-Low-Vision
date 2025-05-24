@@ -11,8 +11,12 @@ public class NeedleBG : MonoBehaviour
     public float distanceFromCamera = 2f; // How far in front of camera to place arrow
     private Image needleImage;
     public Color visibleColor = Color.white;
+    public Color backgroundColor = Color.white;
     public float inViewAngle = 30f;
     public float nearFrustumAngle = 45f;
+
+    public RectTransform backgroundUI;
+    private Image backgroundImage;
 
 
     void Start()
@@ -22,7 +26,14 @@ public class NeedleBG : MonoBehaviour
         {
             Debug.LogError("arrowUI must have an Image component.");
         }
-
+        if (backgroundUI != null)
+        {
+            backgroundImage = backgroundUI.GetComponent<Image>();
+            if (backgroundImage == null)
+            {
+                Debug.LogError("backgroundUI must have an Image component.");
+            }
+        }
         Debug.Log("Unity debug log test");
 
 
@@ -55,6 +66,8 @@ public class NeedleBG : MonoBehaviour
         {
 
             needleImage.color = visibleColor;
+            if (backgroundImage != null)
+                backgroundImage.color = backgroundColor;
             // Vector3 worldPosition = mainCamera.ScreenToWorldPoint(screenPoint);
             // NeedleUI.position = worldPosition;
             // Make arrow face the camera
@@ -72,7 +85,8 @@ public class NeedleBG : MonoBehaviour
         else
         {
 
-            needleImage.color = new Color(1f, 1f, 1f, 0f); // 30% Í¸Ã÷¶È
+            needleImage.color = new Color(1f, 1f, 1f, 0f); 
+            backgroundImage.color = new Color(1f, 1f, 1f, 0f); 
         }
     }
 }

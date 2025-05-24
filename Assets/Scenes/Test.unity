@@ -15127,8 +15127,10 @@ MonoBehaviour:
   NeedleUI: {fileID: 1327463885}
   distanceFromCamera: 0.5
   visibleColor: {r: 0.06448022, g: 0.49540454, b: 0.9764151, a: 1}
+  backgroundColor: {r: 0, g: 0.75177574, b: 1, a: 0.08627451}
   inViewAngle: 30
   nearFrustumAngle: 45
+  backgroundUI: {fileID: 888003341}
 --- !u!114 &1327463888
 MonoBehaviour:
   m_ObjectHideFlags: 0
