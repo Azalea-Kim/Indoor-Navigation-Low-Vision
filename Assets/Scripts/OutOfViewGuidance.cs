@@ -1,9 +1,11 @@
+using Meta.XR.BuildingBlocks;
 using UnityEngine;
 using UnityEngine.UI;
 
 
 public class OutOfViewGuidance : MonoBehaviour
 {
+    public GameObject arrow3D;
     public Transform target;              // The object to point to
     public Camera mainCamera;             // XR rig camera or center eye anchor
     public RectTransform arrowUI;         // The UI element in a World Space Canvas
@@ -36,6 +38,10 @@ public class OutOfViewGuidance : MonoBehaviour
         {
             Debug.LogError("arrowUI must have an Image component.");
         }
+        
+         Debug.Log("Unity debug log test");
+        
+
     }
 
     void Update()
@@ -58,10 +64,11 @@ public class OutOfViewGuidance : MonoBehaviour
         bool isOnScreen = isInFront &&
                        viewportPoint.x > 0 && viewportPoint.x < 1 &&
                       viewportPoint.y > 0 && viewportPoint.y < 1;
-         // bool isOnScreen = isInFront && (angleToTarget < inViewAngle);
+        // bool isOnScreen = isInFront && (angleToTarget < inViewAngle);
 
         if (isOnScreen)
         {
+            //centeringNeedle.UpdateNeedle();
             if (arrowImage.sprite != visibleSprite)
                 arrowImage.sprite = visibleSprite;
 
@@ -69,6 +76,9 @@ public class OutOfViewGuidance : MonoBehaviour
             arrowUI.position = worldPosition;
             // Make arrow face the camera
             arrowUI.rotation = Quaternion.LookRotation(arrowUI.position - mainCamera.transform.position);
+
+            if (arrow3D != null) arrow3D.SetActive(true);
+
         }
         else
         {
@@ -84,6 +94,8 @@ public class OutOfViewGuidance : MonoBehaviour
 
             float angle = Mathf.Atan2(localDir.y, localDir.x) * Mathf.Rad2Deg;
             arrowUI.Rotate(0, 0, angle - 90, Space.Self);
+
+            if (arrow3D != null) arrow3D.SetActive(false);
 
 
 

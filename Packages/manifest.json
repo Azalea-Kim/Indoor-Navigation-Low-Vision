@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.meta.xr.mrutilitykit": "76.0.1",
     "com.meta.xr.sdk.core": "76.0.1",
     "com.meta.xr.sdk.interaction.ovr": "76.0.1",
     "com.meta.xr.simulator": "76.0.0",
@@ -9,9 +8,12 @@
     "com.unity.inputsystem": "1.14.0",
     "com.unity.learn.iet-framework": "3.1.3",
     "com.unity.learn.iet-framework.authoring": "1.2.2",
+    "com.unity.mobile.android-logcat": "1.4.5",
+    "com.unity.nuget.newtonsoft-json": "3.2.1",
     "com.unity.render-pipelines.universal": "14.0.12",
     "com.unity.test-framework": "1.1.33",
     "com.unity.textmeshpro": "3.0.8",
+    "com.unity.visualeffectgraph": "14.0.12",
     "com.unity.xr.arfoundation": "5.2.0",
     "com.unity.xr.hands": "1.4.1",
     "com.unity.xr.interaction.toolkit": "3.0.3",
