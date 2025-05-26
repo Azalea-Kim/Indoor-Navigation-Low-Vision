@@ -3,7 +3,7 @@
     "m_SelectedProcess": {
         "deviceId": "2G0YC5ZF8M0458",
         "name": "com.unity.template.mixedreality",
-        "processId": 3121,
+        "processId": 18727,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -78,6 +78,30 @@
             "deviceId": "2G0YC5ZF8M0458",
             "name": "com.unity.template.mixedreality",
             "processId": 3121,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 7392,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 6807,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 16377,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 18727,
             "exited": false
         }
     ],

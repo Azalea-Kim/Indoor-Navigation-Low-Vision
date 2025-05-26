@@ -65,6 +65,7 @@
     <Compile Include="Assets\MRTemplateAssets\Scripts\BooleanToggleVisualsController.cs" />
     <Compile Include="Assets\Scripts\Needle.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\GoalManager.cs" />
+    <Compile Include="Assets\TransitionZone.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\GazeTooltips.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\ZoneScale.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\PinchVizController.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="Assets\MRTemplateAssets\Scripts\VideoTimeScrubControl.cs" />
     <Compile Include="Assets\Scripts\Track.cs" />
     <Compile Include="Assets\Scripts\OutOfViewGuidance.cs" />
+    <Compile Include="Assets\Scripts\TransitionZoneGuidance.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\VideoPlayerRenderTexture.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\PlaneTrackingModeVisualizer.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\SpawnedObjectsManager.cs" />

@@ -46,10 +46,10 @@ public class Needle : MonoBehaviour
         Vector3 viewportPoint = mainCamera.WorldToViewportPoint(target.position);
 
 
-        bool isOnScreen = isInFront &&
-                       viewportPoint.x > 0 && viewportPoint.x < 1 &&
-                      viewportPoint.y > 0 && viewportPoint.y < 1;
-        // bool isOnScreen = isInFront && (angleToTarget < inViewAngle);
+        //bool isOnScreen = isInFront &&
+                     //  viewportPoint.x > 0 && viewportPoint.x < 1 &&
+                    //  viewportPoint.y > 0 && viewportPoint.y < 1;
+        bool isOnScreen = isInFront && (angleToTarget < inViewAngle);
 
 
         if (isOnScreen)
