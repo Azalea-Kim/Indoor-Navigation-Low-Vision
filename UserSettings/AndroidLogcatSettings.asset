@@ -3,7 +3,7 @@
     "m_SelectedProcess": {
         "deviceId": "2G0YC5ZF8M0458",
         "name": "com.unity.template.mixedreality",
-        "processId": 18727,
+        "processId": 7458,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,97 +11,37 @@
         {
             "deviceId": "2G0YC5ZF8M0458",
             "name": "com.unity.template.mixedreality",
-            "processId": 25381,
+            "processId": 9195,
             "exited": true
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
             "name": "com.unity.template.mixedreality",
-            "processId": 2522,
+            "processId": 10179,
             "exited": true
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
             "name": "com.unity.template.mixedreality",
-            "processId": 24417,
+            "processId": 11251,
             "exited": true
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
             "name": "com.unity.template.mixedreality",
-            "processId": 9035,
+            "processId": 11679,
             "exited": true
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.oculus.shellenv",
-            "processId": 2766,
+            "name": "com.unity.template.mixedreality",
+            "processId": 5829,
             "exited": false
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
             "name": "com.unity.template.mixedreality",
-            "processId": 6193,
-            "exited": false
-        },
-        {
-            "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality",
-            "processId": 13689,
-            "exited": false
-        },
-        {
-            "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality",
-            "processId": 23774,
-            "exited": false
-        },
-        {
-            "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality",
-            "processId": 22160,
-            "exited": false
-        },
-        {
-            "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality",
-            "processId": 27750,
-            "exited": false
-        },
-        {
-            "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality",
-            "processId": 31387,
-            "exited": false
-        },
-        {
-            "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality",
-            "processId": 3121,
-            "exited": false
-        },
-        {
-            "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality",
-            "processId": 7392,
-            "exited": false
-        },
-        {
-            "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality",
-            "processId": 6807,
-            "exited": false
-        },
-        {
-            "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality",
-            "processId": 16377,
-            "exited": false
-        },
-        {
-            "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality",
-            "processId": 18727,
+            "processId": 7458,
             "exited": false
         }
     ],
@@ -160,7 +100,7 @@
     },
     "m_FilterOptions": {
         "m_Filter": "",
-        "m_UseRegularExpressions": false,
+        "m_UseRegularExpressions": true,
         "m_MatchCase": false
     },
     "m_SymbolPaths": [],

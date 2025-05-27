@@ -63,7 +63,6 @@
     <Compile Include="Assets\MRTemplateAssets\Scripts\XRPokeFollowAffordanceFill.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\FadePlaneMaterial.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\BooleanToggleVisualsController.cs" />
-    <Compile Include="Assets\Scripts\Needle.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\GoalManager.cs" />
     <Compile Include="Assets\TransitionZone.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\GazeTooltips.cs" />
@@ -77,8 +76,10 @@
     <Compile Include="Assets\MRTemplateAssets\Scripts\PositionAtStart.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\FadeMaterial.cs" />
     <Compile Include="Assets\Scripts\GlowFollower.cs" />
+    <Compile Include="Assets\Scripts\SetupParticleSystem.cs" />
     <Compile Include="Assets\Scripts\ArchorDebugUI.cs" />
     <Compile Include="Assets\Needles.cs" />
+    <Compile Include="Assets\Scripts\RippleParticleEffect.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\TurnToFace.cs" />
     <Compile Include="Assets\Scripts\CenteringNeedle.cs" />
     <Compile Include="Assets\Scripts\SimpleGlowPulse.cs" />

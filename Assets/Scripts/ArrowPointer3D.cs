@@ -7,7 +7,7 @@ public class ArrowPointer3D : MonoBehaviour
     public Camera mainCamera;
     public bool faceCamera = false;       // 是否让箭头面向相机
     public bool showOnlyInView = false;   // 物体可见时才显示
-
+    public float fixedHeight = 20.0f;
     private Renderer arrowRenderer;
 
     void Start()
@@ -20,8 +20,10 @@ public class ArrowPointer3D : MonoBehaviour
         if (target == null || mainCamera == null) return;
 
         // 设置箭头在物体上方
-        transform.position = target.position + Vector3.up * heightAboveTarget;
-
+        //transform.position = target.position + Vector3.up * heightAboveTarget;
+        Vector3 arrowPos = target.position;
+        arrowPos.y = fixedHeight;
+        transform.position = arrowPos;
         // 箭头指向目标（向下）
         transform.rotation = Quaternion.LookRotation(
             target.position - transform.position

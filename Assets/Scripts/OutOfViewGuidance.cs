@@ -12,11 +12,15 @@ public class OutOfViewGuidance : MonoBehaviour
     public Sprite arrowSprite;            // Sprite for off-screen arrow
     public Sprite visibleSprite;          // Sprite for on-screen object
     public float distanceFromCamera = 2f; // How far in front of camera to place arrow
+    public AudioSource audioSource;       // AudioSource for the sound effect
 
     private Image arrowImage;
 
+    private bool wasPreviouslyVisible = true;
+
     public float inViewAngle = 30f;
     public float nearFrustumAngle = 45f;
+    public float inTransitionAngle = 65f;
 
 
 
@@ -65,6 +69,14 @@ public class OutOfViewGuidance : MonoBehaviour
              //          viewportPoint.x > 0 && viewportPoint.x < 1 &&
                 //      viewportPoint.y > 0 && viewportPoint.y < 1;
         bool isOnScreen = isInFront && (angleToTarget < inViewAngle);
+        bool inOnTransition = isInFront && (angleToTarget < inTransitionAngle);
+
+        // Play sound when target just becomes visible
+        if (!wasPreviouslyVisible && inOnTransition)
+        {
+            PlaySoundOnVisible();
+        }
+        wasPreviouslyVisible = inOnTransition;
 
         if (isOnScreen)
         {
@@ -77,11 +89,14 @@ public class OutOfViewGuidance : MonoBehaviour
             // Make arrow face the camera
             arrowUI.rotation = Quaternion.LookRotation(arrowUI.position - mainCamera.transform.position);
 
+            arrowImage.color = new Color(1f, 1f, 1f, 0f);
+
             if (arrow3D != null) arrow3D.SetActive(true);
 
         }
         else
         {
+            arrowImage.color = new Color(1f, 1f, 1f, 1f);
             if (arrowImage.sprite != arrowSprite)
                 arrowImage.sprite = arrowSprite;
 
@@ -105,6 +120,14 @@ public class OutOfViewGuidance : MonoBehaviour
             //Quaternion lookRotation = Quaternion.LookRotation(direction);
             //arrowUI.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90);
             //arrowUI.rotation = Quaternion.LookRotation(arrowUI.position - mainCamera.transform.position);
+        }
+    }
+
+    void PlaySoundOnVisible()
+    {
+        if (audioSource != null && !audioSource.isPlaying)
+        {
+            audioSource.Play();
         }
     }
 }
