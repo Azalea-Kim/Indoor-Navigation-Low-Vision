@@ -1,11 +1,26 @@
-APK 
+# XR Navigation Aid – APK Builds
 
-Initial inview: in-view
+This repository contains experimental builds of an XR-based navigation aid system using multimodal cues.
 
-Transition sidebar added: transition+inview3
+## APK Versions
 
-Audio: all2gi
+- **`in-view.apk`**
+  - Initial implementation of the in-view and out-view indicator.
 
-Angles: 
+- **`transition+inview3.apk`**
+  - Adds a **transition sidebar** indicator to the system.
 
-30 as inview and 30-65 as transition zone
+- **`all2g.apk`**
+  - Integrates **spatial audio** guidance with the visual system.
+
+## Angular Zones
+
+- **In-view zone:** `0°–30°`  
+- **Transition zone:** `30°–65°`  
+- Targets outside of 65° can be extended with out-of-view indicators if needed.
+
+## Active Development Branch
+
+- `in-view`
+
+
