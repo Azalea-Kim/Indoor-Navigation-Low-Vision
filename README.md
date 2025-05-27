@@ -10,7 +10,7 @@ This repository contains experimental builds of an XR-based navigation aid syste
 - **`transition+inview3.apk`**
   - Adds a **transition sidebar** indicator to the system.
 
-- **`all2g.apk`**
+- **`all2.apk`**
   - Integrates **spatial audio** guidance with the visual system.
 
 ## Angular Zones
