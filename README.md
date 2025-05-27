@@ -11,7 +11,7 @@ This repository contains experimental builds of an XR-based navigation aid syste
   - Adds a **transition sidebar** indicator to the system.
 
 - **`all2.apk`**
-  - Integrates **spatial audio** guidance with the visual system.
+  - Integrates transition lock-on audio and ripple attention guide in the system.
 
 ## Angular Zones
 
