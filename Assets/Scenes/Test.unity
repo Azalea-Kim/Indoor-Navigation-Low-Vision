@@ -2449,6 +2449,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 188852181}
+  - component: {fileID: 188852182}
   m_Layer: 0
   m_Name: LeftControllerAnchor
   m_TagString: Untagged
@@ -2472,6 +2473,22 @@ Transform:
   - {fileID: 360247685}
   m_Father: {fileID: 54433145}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &188852182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188852180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40676acc6d45ab42aee487af70eb64f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticClip: {fileID: 2460798210113038985, guid: 6088153bc08a8c94fba95f527341a456, type: 3}
+  target: {fileID: 774726453}
+  maxDistance: 20
+  hand: 0
 --- !u!1 &206829592
 GameObject:
   m_ObjectHideFlags: 0
@@ -20806,7 +20823,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af86c86a626dba44ba7d1d4ebd5bdad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubeToAttach: {fileID: 879766935}
   _onAnchorCreateCompleted:
     m_PersistentCalls:
       m_Calls: []
@@ -21966,6 +21982,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1453744864}
+  - component: {fileID: 1453744865}
   m_Layer: 0
   m_Name: RightControllerAnchor
   m_TagString: Untagged
@@ -21989,6 +22006,22 @@ Transform:
   - {fileID: 1965599917}
   m_Father: {fileID: 844583953}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1453744865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453744863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40676acc6d45ab42aee487af70eb64f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticClip: {fileID: 2460798210113038985, guid: 6088153bc08a8c94fba95f527341a456, type: 3}
+  target: {fileID: 774726453}
+  maxDistance: 20
+  hand: 1
 --- !u!1 &1455446100
 GameObject:
   m_ObjectHideFlags: 0
