@@ -12,7 +12,9 @@ This repository contains experimental builds of an XR-based navigation aid syste
 
 - **`all2.apk`**
   - Integrates transition lock-on audio and ripple attention guide in the system.
-
+    
+- **`test1.apk`**
+    - Added Settings Panel
 ## Angular Zones
 
 - **In-view zone:** `0°–30°`  
