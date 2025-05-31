@@ -16,11 +16,15 @@ public class OutOfViewGuidance : MonoBehaviour
 
     private Image arrowImage;
 
+    public Toggle toggle;
+
     private bool wasPreviouslyVisible = true;
 
     public float inViewAngle = 30f;
     public float nearFrustumAngle = 45f;
     public float inTransitionAngle = 65f;
+    public bool audioEnabledByToggle = true;
+    private bool arrowVisible = true;
 
 
 
@@ -44,12 +48,35 @@ public class OutOfViewGuidance : MonoBehaviour
         }
         
          Debug.Log("Unity debug log test");
-        
 
+        if (toggle != null)
+        {
+            toggle.onValueChanged.AddListener(OnToggleChanged);
+            arrowVisible = toggle.isOn;
+        }
+
+
+    }
+
+    void OnToggleChanged(bool isOn)
+    {
+        arrowVisible = isOn;
+
+        // Ç¿ÖÆÒþ²ØÍ¼Ïñ£¨·ÀÖ¹Toggle±ä¸üºó²ÐÁô£©
+        if (!isOn && arrowImage != null)
+        {
+            arrowImage.color = new Color(1f, 1f, 1f, 0f);
+        }
     }
 
     void Update()
     {
+        if (!arrowVisible)
+        {
+            if (arrowImage != null)
+                arrowImage.color = new Color(1f, 1f, 1f, 0f);
+            return; // 
+        }
         Vector3 toTarget = target.position - mainCamera.transform.position;
         Vector3 camForward = mainCamera.transform.forward;
         float angleToTarget = Vector3.Angle(mainCamera.transform.forward, toTarget);
@@ -125,6 +152,7 @@ public class OutOfViewGuidance : MonoBehaviour
 
     void PlaySoundOnVisible()
     {
+        if (!audioEnabledByToggle) return;
         if (audioSource != null && !audioSource.isPlaying)
         {
             audioSource.Play();

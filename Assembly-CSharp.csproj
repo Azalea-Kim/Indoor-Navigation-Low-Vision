@@ -60,27 +60,39 @@
     <Analyzer Include="D:\unity_installs\2022.3.62f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ToggleRayWithKey.cs" />
+    <Compile Include="Assets\Scripts\ToggleControlObject.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\XRPokeFollowAffordanceFill.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\FadePlaneMaterial.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\BooleanToggleVisualsController.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\GoalManager.cs" />
     <Compile Include="Assets\TransitionZone.cs" />
+    <Compile Include="Assets\Scripts\3DArrowToggle.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\GazeTooltips.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\ZoneScale.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\PinchVizController.cs" />
     <Compile Include="Assets\Scripts\ConsoleToText.cs" />
     <Compile Include="Assets\Scripts\AUI.cs" />
     <Compile Include="Assets\Scripts\VRDebug.cs" />
+    <Compile Include="Assets\Scripts\ToggleParticle.cs" />
+    <Compile Include="Assets\Scripts\AudioToggleController.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\LaunchProjectile.cs" />
     <Compile Include="Assets\Scripts\ArrowPointer3D.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\PositionAtStart.cs" />
+    <Compile Include="Assets\Scripts\OutOfViewToggle.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\FadeMaterial.cs" />
+    <Compile Include="Assets\Scripts\RippleToggle.cs" />
+    <Compile Include="Assets\UISwitcher\Example\Example.cs" />
     <Compile Include="Assets\Scripts\GlowFollower.cs" />
     <Compile Include="Assets\Scripts\SetupParticleSystem.cs" />
     <Compile Include="Assets\Scripts\ArchorDebugUI.cs" />
     <Compile Include="Assets\Needles.cs" />
+    <Compile Include="Assets\UISwitcher\UISwitcher\Scripts\UISwitcher.cs" />
     <Compile Include="Assets\Scripts\RippleParticleEffect.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\TurnToFace.cs" />
+    <Compile Include="Assets\Scripts\Ripple.cs" />
+    <Compile Include="Assets\Scripts\ToggleParticleController.cs" />
+    <Compile Include="Assets\UISwitcher\UISwitcher\Scripts\UINullableToggle.cs" />
     <Compile Include="Assets\Scripts\CenteringNeedle.cs" />
     <Compile Include="Assets\Scripts\SimpleGlowPulse.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\VideoTimeScrubControl.cs" />
@@ -92,6 +104,7 @@
     <Compile Include="Assets\MRTemplateAssets\Scripts\SpawnedObjectsManager.cs" />
     <Compile Include="Assets\NeedlesBG.cs" />
     <Compile Include="Assets\MRTemplateAssets\Scripts\XRBlaster.cs" />
+    <Compile Include="Assets\Scripts\NeedlesToggle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -101,6 +114,7 @@
     <None Include="Assets\MRTemplateAssets\Shaders\CustomLighting.hlsl" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\UISwitcher\readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />

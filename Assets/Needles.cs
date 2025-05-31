@@ -15,6 +15,7 @@ public class Needles : MonoBehaviour
     public float nearFrustumAngle = 45f;
     private float currentX = 0f;
     private float xVelocity = 0f;
+    public bool enabledByToggle = true;
 
 
     void Start()
@@ -32,6 +33,7 @@ public class Needles : MonoBehaviour
 
     void Update()
     {
+        if (!enabledByToggle) return;
         Vector3 toTarget = target.position - mainCamera.transform.position;
         Vector3 camForward = mainCamera.transform.forward;
         float angleToTarget = Vector3.Angle(mainCamera.transform.forward, toTarget);

@@ -3,7 +3,7 @@
     "m_SelectedProcess": {
         "deviceId": "2G0YC5ZF8M0458",
         "name": "com.unity.template.mixedreality",
-        "processId": 7458,
+        "processId": 21142,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -42,6 +42,120 @@
             "deviceId": "2G0YC5ZF8M0458",
             "name": "com.unity.template.mixedreality",
             "processId": 7458,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 6483,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 9106,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 10804,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 12988,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 16980,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 17613,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 19667,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 21643,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 24331,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 27596,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 30275,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 32615,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 4761,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 8310,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 9936,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 13524,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 16361,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 18540,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 21142,
             "exited": false
         }
     ],

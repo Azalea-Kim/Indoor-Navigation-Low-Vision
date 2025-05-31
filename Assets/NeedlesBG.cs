@@ -17,6 +17,7 @@ public class NeedleBG : MonoBehaviour
 
     public RectTransform backgroundUI;
     private Image backgroundImage;
+    public bool enabledByToggle = true;
 
 
     void Start()
@@ -41,6 +42,7 @@ public class NeedleBG : MonoBehaviour
 
     void Update()
     {
+        if (!enabledByToggle) return;
         Vector3 toTarget = target.position - mainCamera.transform.position;
         Vector3 camForward = mainCamera.transform.forward;
         float angleToTarget = Vector3.Angle(mainCamera.transform.forward, toTarget);

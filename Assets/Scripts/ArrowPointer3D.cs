@@ -9,10 +9,13 @@ public class ArrowPointer3D : MonoBehaviour
     public bool showOnlyInView = false;   // 物体可见时才显示
     public float fixedHeight = 20.0f;
     private Renderer arrowRenderer;
+    public bool arrowVisible = true;
+    private Renderer[] arrowRenderers;
 
     void Start()
     {
         arrowRenderer = GetComponentInChildren<Renderer>();
+        arrowRenderers = GetComponentsInChildren<Renderer>(true);
     }
 
     void Update()
@@ -38,14 +41,33 @@ public class ArrowPointer3D : MonoBehaviour
         }
 
         // 可选：仅当目标在视野中时显示箭头
-        if (showOnlyInView && arrowRenderer != null)
-        {
-            Vector3 viewPos = mainCamera.WorldToViewportPoint(target.position);
-            bool isInView = viewPos.z > 0 &&
-                            viewPos.x > 0 && viewPos.x < 1 &&
-                            viewPos.y > 0 && viewPos.y < 1;
+        //if (showOnlyInView && arrowRenderer != null)
+        //{
+        //   Vector3 viewPos = mainCamera.WorldToViewportPoint(target.position);
+        //  bool isInView = viewPos.z > 0 &&
+        //                viewPos.x > 0 && viewPos.x < 1 &&
+        //                 viewPos.y > 0 && viewPos.y < 1;
 
-            arrowRenderer.enabled = isInView;
+        //  arrowRenderer.enabled = isInView;
+        // }
+        foreach (var renderer in arrowRenderers)
+        {
+            if (renderer != null)
+            {
+                if (showOnlyInView)
+                {
+                    Vector3 viewPos = mainCamera.WorldToViewportPoint(target.position);
+                    bool isInView = viewPos.z > 0 &&
+                                    viewPos.x > 0 && viewPos.x < 1 &&
+                                    viewPos.y > 0 && viewPos.y < 1;
+
+                    renderer.enabled = isInView && arrowVisible;
+                }
+                else
+                {
+                    renderer.enabled = arrowVisible;
+                }
+            }
         }
     }
 }

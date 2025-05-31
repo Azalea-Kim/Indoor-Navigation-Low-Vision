@@ -8,6 +8,9 @@ public class RippleParticleEffect : MonoBehaviour
     [SerializeField] private Camera mainCamera;
     [SerializeField] private ParticleSystem rippleParticles;
 
+    [Header("Visibility Settings")]
+    [SerializeField] private bool ripplesVisible = true;
+
     [Header("Detection Settings")]
     [SerializeField] private float inViewAngle = 30f;
     [SerializeField] private float nearFrustumAngle = 45f;
@@ -41,6 +44,7 @@ public class RippleParticleEffect : MonoBehaviour
     private Vector3 batchStartPos;
     private Vector3 batchEndPos;
     private float batchTotalDistance;
+    public Color InViewColor => inViewColor;
 
 
     private Coroutine batchCoroutine;
@@ -48,9 +52,9 @@ public class RippleParticleEffect : MonoBehaviour
     void Start()
     {
         SetupParticleSystem();
+        UpdateVisibility();
 
-
-       //InvokeRepeating(nameof(CheckAutoTrigger), 0f, autoTriggerInterval);
+        //InvokeRepeating(nameof(CheckAutoTrigger), 0f, autoTriggerInterval);
 
     }
 
@@ -99,13 +103,26 @@ public class RippleParticleEffect : MonoBehaviour
         colorOverLifetime.color = gradient;
     }
 
+    private void UpdateVisibility()
+    {
+        if (rippleParticles != null)
+        {
+            var renderer = rippleParticles.GetComponent<ParticleSystemRenderer>();
+            if (renderer != null)
+            {
+                renderer.enabled = ripplesVisible;
+            }
+        }
+    }
+
+
     void Update()
     {
         UpdateTargetDetection();
         //HandleViewStateChanges();
         //CheckAutoTrigger();
 
-        if (isTargetInView && batchCoroutine == null)
+        if (isTargetInView && batchCoroutine == null && ripplesVisible)
         {
             batchCoroutine = StartCoroutine(EmitInBatches());
         }
@@ -115,6 +132,60 @@ public class RippleParticleEffect : MonoBehaviour
             TriggerSingleCircle();
         }
     }
+
+    public void ToggleRippleVisibility()
+    {
+        ripplesVisible = !ripplesVisible;
+        UpdateVisibility();
+
+        // If we're making ripples invisible, stop any ongoing emission
+        if (!ripplesVisible && batchCoroutine != null)
+        {
+            StopCoroutine(batchCoroutine);
+            batchCoroutine = null;
+
+            // Clear existing particles
+            if (rippleParticles != null)
+            {
+                rippleParticles.Clear();
+            }
+        }
+        // If we're making ripples visible again and target is in view, restart emission
+        else if (ripplesVisible && isTargetInView && batchCoroutine == null)
+        {
+            batchCoroutine = StartCoroutine(EmitInBatches());
+        }
+    }
+
+    public void SetRippleVisibility(bool visible)
+    {
+        ripplesVisible = visible;
+        UpdateVisibility();
+
+        // If we're making ripples invisible, stop any ongoing emission
+        if (!ripplesVisible && batchCoroutine != null)
+        {
+            StopCoroutine(batchCoroutine);
+            batchCoroutine = null;
+
+            // Clear existing particles
+            if (rippleParticles != null)
+            {
+                rippleParticles.Clear();
+            }
+        }
+        // If we're making ripples visible again and target is in view, restart emission
+        else if (ripplesVisible && isTargetInView && batchCoroutine == null)
+        {
+            batchCoroutine = StartCoroutine(EmitInBatches());
+        }
+    }
+
+    public bool GetRippleVisibility()
+    {
+        return ripplesVisible;
+    }
+
 
     private IEnumerator EmitInBatches()
     {
@@ -128,7 +199,7 @@ public class RippleParticleEffect : MonoBehaviour
 
             for (int i = 0; i < emitBatchCount; i++)
             {
-                
+
                 TriggerSingleCircle();
                 yield return new WaitForSeconds(emitCooldown);
 
@@ -143,7 +214,7 @@ public class RippleParticleEffect : MonoBehaviour
 
             yield return new WaitForSeconds(restCooldown);
 
-         
+
             UpdateTargetDetection();
             if (!isTargetInView)
             {
@@ -199,7 +270,7 @@ public class RippleParticleEffect : MonoBehaviour
     }
     public void TriggerSingleCircle()
     {
-        if (target == null || mainCamera == null) return;
+        if (target == null || mainCamera == null || !ripplesVisible) return;
 
         Vector3 startPos = target.position;
         Vector3 direction = (mainCamera.transform.position - startPos).normalized;
@@ -223,7 +294,7 @@ public class RippleParticleEffect : MonoBehaviour
 
     private IEnumerator MoveSingleCircle()
     {
-        if (target == null || mainCamera == null) yield break;
+        if (target == null || mainCamera == null || !ripplesVisible) yield break;
 
         Color currentColor = inViewColor;
 
@@ -249,7 +320,7 @@ public class RippleParticleEffect : MonoBehaviour
             float startTime = Time.time;
             float endTime = startTime + journeyTime;
 
-            while (Time.time < endTime && Time.time - startTime < circleLifetime)
+            while (Time.time < endTime && Time.time - startTime < circleLifetime && ripplesVisible)
             {
                 float progress = Mathf.InverseLerp(startTime, endTime, Time.time);
                 Vector3 currentPos = Vector3.Lerp(startPos, endPos, progress);
@@ -280,7 +351,7 @@ public class RippleParticleEffect : MonoBehaviour
         //UpdateTargetDetection();
         Color currentColor = inViewColor;
 
-       // Vector3 startPos = target.position;
+        // Vector3 startPos = target.position;
         //Vector3 endPos = mainCamera.transform.position + (mainCamera.transform.forward * distanceFromCamera);
 
         // 不再计算 startPos 和 endPos
