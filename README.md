@@ -24,8 +24,10 @@ This repository contains experimental builds of an XR-based navigation aid syste
       
 - **`plz8.apk`**
     - Final Working Version
- 
-  
+
+APKs can be found here:
+https://drive.google.com/file/d/1A-x4xMufU7dVWERhA-Fwv00LMmyzhwrn/view?usp=sharing
+
 ## Angular Zones
 
 - **In-view zone:** `0°–30°`  
@@ -42,4 +44,7 @@ Vibration is related to glow and Pulse sound is related to out of view arrow.
 If reloading failed, erase all and try create and reload again then it will work.
 
 SpatialAnchorCoreBuildingBlock.cs should be modified. 
+
+## Demo Video
+[https://drive.google.com/file/d/1d0TTOIerimKHI2FOQhDo-rZHOZ-YaTG-/view?usp=drive_link](https://drive.google.com/file/d/1d0TTOIerimKHI2FOQhDo-rZHOZ-YaTG-/view?usp=sharing)
 
