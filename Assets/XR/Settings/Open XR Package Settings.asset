@@ -1254,9 +1254,9 @@ MonoBehaviour:
   - {fileID: -5883651887148789007}
   - {fileID: -9158263212284301082}
   - {fileID: 7717511180681032800}
-  - {fileID: -8776083830351833173}
-  - {fileID: 8594420097343157094}
-  - {fileID: -1998296605311725746}
+  - {fileID: -2869731202771628586}
+  - {fileID: 3243487182232361114}
+  - {fileID: 624869861315048294}
   - {fileID: 4733582888881772063}
   - {fileID: 8338187220580160438}
   - {fileID: 8103864927265409526}
@@ -1749,14 +1749,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 076937beb8763d94790d2e9cc1248ac8, type: 3}
-  m_Name: ARFoundationFeature Android
+  m_Name: ARSessionFeature Android
   m_EditorClassIdentifier: 
   m_enabled: 1
-  nameUi: 'AR Foundation: Meta Quest Features'
+  nameUi: 'Meta Quest: AR Session'
   version: 0.1.0
-  featureIdInternal: com.unity.openxr.feature.arfoundation-meta
-  openxrExtensionStrings: 'XR_FB_passthrough XR_FB_spatial_entity XR_FB_spatial_entity_query
-    XR_FB_spatial_entity_storage XR_FB_scene '
+  featureIdInternal: com.unity.openxr.feature.arfoundation-meta-session
+  openxrExtensionStrings: XR_FB_scene_capture
   company: Unity Technologies
   priority: 0
   required: 0
