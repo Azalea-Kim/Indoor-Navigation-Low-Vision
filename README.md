@@ -36,4 +36,10 @@ This repository contains experimental builds of an XR-based navigation aid syste
 
 - `in-view`
 
+## Notes
+Spatial Anchors only works when it's roomscale boundary, and spatial data permission is given. 
+Vibration is related to glow and Pulse sound is related to out of view arrow.
+If reloading failed, erase all and try create and reload again then it will work.
+
+SpatialAnchorCoreBuildingBlock.cs should be modified. 
 
