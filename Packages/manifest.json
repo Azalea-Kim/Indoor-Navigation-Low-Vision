@@ -4,6 +4,7 @@
     "com.meta.xr.sdk.haptics": "76.0.1",
     "com.meta.xr.sdk.interaction.ovr": "76.0.1",
     "com.meta.xr.simulator": "76.0.0",
+    "com.unify.unified-universal-blur": "https://github.com/lukakldiashvili/Unified-Universal-Blur.git",
     "com.unity.collab-proxy": "2.8.2",
     "com.unity.feature.development": "1.0.1",
     "com.unity.inputsystem": "1.14.0",

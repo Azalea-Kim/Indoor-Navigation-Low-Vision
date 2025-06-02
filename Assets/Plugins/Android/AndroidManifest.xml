@@ -3,8 +3,8 @@
 <uses-permission android:name="com.oculus.permission.ACCESS_ANCHOR_STORAGE" />
 <uses-permission android:name="com.oculus.permission.ACCESS_SPACE_STORAGE" />
   <uses-permission android:name="com.oculus.permission.USE_SCENE" />
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <application android:label="@string/app_name" android:icon="@mipmap/app_icon" android:allowBackup="false">
+
     <activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:launchMode="singleTask" android:name="com.unity3d.player.UnityPlayerActivity" android:excludeFromRecents="true" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -17,6 +17,8 @@
     <meta-data android:name="com.oculus.ossplash.background" android:value="black" />
     <meta-data android:name="com.oculus.telemetry.project_guid" android:value="1818bd09-915d-4cec-89b5-0d1f448572e9" />
     <meta-data android:name="com.oculus.supportedDevices" android:value="quest|quest2|questpro|quest3|quest3s" tools:replace="android:value" />
+<meta-data android:name="com.oculus.features" android:value="passthrough,spatial-anchors,scene" />
+
   </application>
   <uses-feature android:name="android.hardware.vr.headtracking" android:version="1" android:required="true" />
 <uses-feature android:name="com.oculus.feature.environment_anchor" android:required="true" />

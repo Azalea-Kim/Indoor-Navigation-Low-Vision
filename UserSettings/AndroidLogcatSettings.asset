@@ -2,106 +2,190 @@
     "m_SelectedDeviceId": "2G0YC5ZF8M0458",
     "m_SelectedProcess": {
         "deviceId": "2G0YC5ZF8M0458",
-        "name": "com.unity.template.mixedreality_old",
-        "processId": 6976,
+        "name": "com.unity.template.mixedreality",
+        "processId": 26792,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownProcessesForSerialization": [
         {
             "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality_old",
-            "processId": 9623,
+            "name": "com.unity.template.mixedreality",
+            "processId": 9195,
             "exited": true
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality_old",
-            "processId": 11504,
+            "name": "com.unity.template.mixedreality",
+            "processId": 10179,
             "exited": true
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality_old",
-            "processId": 14637,
+            "name": "com.unity.template.mixedreality",
+            "processId": 11251,
             "exited": true
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality_old",
-            "processId": 17428,
+            "name": "com.unity.template.mixedreality",
+            "processId": 11679,
             "exited": true
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality_old",
-            "processId": 22672,
+            "name": "com.unity.template.mixedreality",
+            "processId": 5829,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 7458,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality2",
+            "processId": 4216,
             "exited": false
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
             "name": "com.unity.template.mixedreality_old",
-            "processId": 25279,
+            "processId": 25353,
             "exited": false
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
             "name": "com.unity.template.mixedreality_old",
-            "processId": 26526,
+            "processId": 27149,
             "exited": false
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
             "name": "com.unity.template.mixedreality_old",
-            "processId": 29049,
+            "processId": 29444,
             "exited": false
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality_old",
-            "processId": 1523,
+            "name": "com.unity.template.mixedreality",
+            "processId": 10964,
             "exited": false
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality_old",
-            "processId": 9034,
+            "name": "com.unity.template.mixedreality",
+            "processId": 20462,
             "exited": false
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality_old",
-            "processId": 13256,
+            "name": "com.unity.template.mixedreality",
+            "processId": 25545,
             "exited": false
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality_old",
-            "processId": 14896,
+            "name": "com.unity.template.mixedreality",
+            "processId": 27511,
             "exited": false
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality_old",
-            "processId": 19551,
+            "name": "com.unity.template.mixedreality",
+            "processId": 28336,
             "exited": false
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality_old",
-            "processId": 23834,
+            "name": "com.unity.template.mixedreality",
+            "processId": 29539,
             "exited": false
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality_old",
-            "processId": 7662,
+            "name": "com.unity.template.mixedreality",
+            "processId": 30773,
             "exited": false
         },
         {
             "deviceId": "2G0YC5ZF8M0458",
-            "name": "com.unity.template.mixedreality_old",
-            "processId": 6976,
+            "name": "com.unity.template.mixedreality",
+            "processId": 7637,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 9133,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 10407,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 11855,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 13120,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 14222,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 15670,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 18316,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 19229,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 21721,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 23153,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 24374,
+            "exited": false
+        },
+        {
+            "deviceId": "2G0YC5ZF8M0458",
+            "name": "com.unity.template.mixedreality",
+            "processId": 26792,
             "exited": false
         }
     ],
@@ -113,7 +197,7 @@
             },
             {
                 "m_Name": "No Filter",
-                "m_Selected": false
+                "m_Selected": true
             },
             {
                 "m_Name": "",
@@ -129,11 +213,11 @@
             },
             {
                 "m_Name": "Unity",
-                "m_Selected": true
+                "m_Selected": false
             },
             {
                 "m_Name": "CRASH",
-                "m_Selected": true
+                "m_Selected": false
             }
         ]
     },

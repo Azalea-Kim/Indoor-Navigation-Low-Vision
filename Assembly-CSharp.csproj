@@ -96,6 +96,7 @@
     <Compile Include="Assets\MRTemplateAssets\Scripts\TurnToFace.cs" />
     <Compile Include="Assets\Scripts\Ripple.cs" />
     <Compile Include="Assets\Scripts\ToggleParticleController.cs" />
+    <Compile Include="Assets\Scripts\LowVisionToggle.cs" />
     <Compile Include="Assets\UISwitcher\UISwitcher\Scripts\UINullableToggle.cs" />
     <Compile Include="Assets\Techjuego\HapticFeedback\Plugins\Scripts\iOSHapticCall.cs" />
     <Compile Include="Assets\Scripts\CenteringNeedle.cs" />
@@ -1340,6 +1341,14 @@
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unified.Universal.Blur.Editor">
+      <HintPath>Library\ScriptAssemblies\Unified.Universal.Blur.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unified.Universal.Blur">
+      <HintPath>Library\ScriptAssemblies\Unified.Universal.Blur.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">

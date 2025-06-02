@@ -1335,6 +1335,14 @@
       <HintPath>Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unified.Universal.Blur.Editor">
+      <HintPath>Library\ScriptAssemblies\Unified.Universal.Blur.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unified.Universal.Blur">
+      <HintPath>Library\ScriptAssemblies\Unified.Universal.Blur.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
       <Private>False</Private>
