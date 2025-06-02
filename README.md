@@ -21,6 +21,9 @@ This repository contains experimental builds of an XR-based navigation aid syste
  
 - **`plz6.apk`**
     - peripheral not working, spatial anchors all working but didn't attach cube
+      
+- **`plz8.apk`**
+    - Final Working Version
  
   
 ## Angular Zones
