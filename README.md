@@ -16,8 +16,8 @@ This repository contains experimental builds of an XR-based navigation aid syste
 - **`test1.apk`**
     - Added Settings Panel
  
-- **`plz4.apk`**
-    - Added simulations with Settings, but spatial anchor disabled
+- **`plz5.apk`**
+    - Added simulations with Settings, can only create new spatial anchors
 ## Angular Zones
 
 - **In-view zone:** `0°–30°`  
